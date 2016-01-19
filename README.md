@@ -1,0 +1,4 @@
+# schedulemaker
+Makes class schedules for the University of Michigan!
+
+This isn't really set up for public consumption, it's more of a modify-as-you-use thing.  The basic workflow is to use inspect element on the Wolverine Access page for the class you want to schedule, copy the appropriate table section into a file called `temp.html`, run `classscraper.py` and redirect the output to an appropriately-named `.json` file, then once you've done this for every class you want, put the filenames into `schedulemaker.py` or `schedulemaker.hs` (both do the same thing), adust the filters to your liking, and then run.  It works very well for me since I wrote the code, but it's probably not worth the effort for someone else to figure out which things should be modified where and when; still, if you really want to use this, send me a message and I can help you out.
